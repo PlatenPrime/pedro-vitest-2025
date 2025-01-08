@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <Counter />
-      <Greeting name="Platen"/>
-      <UserProfile  />
+      <Greeting name="Platen" />
+      <UserProfile userId={4} />
     </>
   );
 }
