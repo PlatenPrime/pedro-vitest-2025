@@ -1,7 +1,7 @@
-type GreetingProps = {
-  name: string;
-};
+import React from "react";
 
-export const Greeting: React.FC<GreetingProps> = ({ name }) => {
-  return <div>Hello, {name}</div>;
-};
+function Greeting({ name } : { name?: string }) {
+  return <h1>Hello, {name || "World"}!</h1>;
+}
+
+export default Greeting;
